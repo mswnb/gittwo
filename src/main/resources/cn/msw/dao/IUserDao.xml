@@ -12,4 +12,22 @@
     <select id="queryById" resultType="cn.msw.domain.User">
         select * from user where id=#{id}
     </select>
+
+    <update id="updateUser">
+        update user
+        <trim prefix="set" suffix="where id=#{id}" suffixOverrides=",">
+            <if test="userName!=null and userName!=‘’">
+                userName =#{userName}
+            </if>
+            <if test="birthday!=null and birthday!=‘’">
+                birthday =#{birthday}
+            </if>
+            <if test="sex!=null and sex!=‘’">
+                sex =#{sex}
+            </if>
+            <if test="address!=null and address!=‘’">
+                address =#{address}
+            </if>
+        </trim>
+    </update>
 </mapper>

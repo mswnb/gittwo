@@ -25,4 +25,11 @@ public interface IUserDao {
      * @return
      */
     User queryById(@Param("id") Integer id);
+
+    /**
+     * 更新用户
+     * @param user
+     * @return
+     */
+    Integer updateUser(User user);
 }
