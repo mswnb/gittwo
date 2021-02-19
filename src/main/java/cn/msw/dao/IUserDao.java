@@ -1,6 +1,7 @@
 package cn.msw.dao;
 
 import cn.msw.domain.User;
+import org.apache.ibatis.annotations.Param;
 
 import java.util.List;
 
@@ -17,4 +18,11 @@ public interface IUserDao {
      * @return
      */
     List<User> findAll();
+
+    /**
+     * 根据id查找用户
+     * @param id id
+     * @return
+     */
+    User queryById(@Param("id") Integer id);
 }
