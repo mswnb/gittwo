@@ -24,6 +24,7 @@ public class MybatisTest {
      */
     public void test01() throws Exception {
         System.out.println("123");
+        System.out.println("2222");
         //1.读取配置文件
         InputStream in = Resources.getResourceAsStream("SqlMapConfig.xml");
         //2.创建SqlSessionFactory工厂
