@@ -27,6 +27,7 @@ public class MybatisTest {
         System.out.println("1111");
         System.out.println("2222");
         System.out.println("3333");
+        System.out.println("4444");
         //1.读取配置文件
         InputStream in = Resources.getResourceAsStream("SqlMapConfig.xml");
         //2.创建SqlSessionFactory工厂
