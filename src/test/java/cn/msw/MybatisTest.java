@@ -27,7 +27,7 @@ public class MybatisTest {
         System.out.println("1111");
         System.out.println("2222");
         System.out.println("3333");
-        System.out.println("4444");
+        System.out.println("00000");
         System.out.println("毛送文");
         //1.读取配置文件
         InputStream in = Resources.getResourceAsStream("SqlMapConfig.xml");
